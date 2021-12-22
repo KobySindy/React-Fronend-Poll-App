@@ -1,0 +1,9 @@
+.pollComp {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  max-width: 300px;
+  margin: 15px;
+  align-items: center;
+  border: 2px solid black;
+}
