@@ -10,7 +10,8 @@ import { vote } from "../../helpers/helpers";
 import "./pollComp.css";
 
 function PollComp({ poll, onVote }) {
-  const [selectedOption, setSelectedOption] = useState();
+  const [selectedOption, setSelectedOption] = useState(null);
+
   const handleChange = (e) => {
     const selectedValue = e.target.value;
     const selectedIndex = poll.options.findIndex(
@@ -22,7 +23,7 @@ function PollComp({ poll, onVote }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!selectedOption) {
+    if (selectedOption === null) {
       return;
     }
     const postVote = async () => {

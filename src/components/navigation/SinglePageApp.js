@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import PollsListPage from "../../pages/PollsListPage";
-import AddPollPage from "../../pages/AddPollPage";
+import PollsListPage from "../../pages/pollsListPage/PollsListPage";
+import AddPollPage from "../../pages/addPollsPage/AddPollPage";
 
 function SinglePageApp() {
   return (

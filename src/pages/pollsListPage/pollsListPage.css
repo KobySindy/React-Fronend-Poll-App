@@ -1,0 +1,7 @@
+.polls-list-container {
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
