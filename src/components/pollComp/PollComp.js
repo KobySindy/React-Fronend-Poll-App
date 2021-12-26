@@ -7,6 +7,8 @@ import FormLabel from "@mui/material/FormLabel";
 import Button from "@mui/material/Button";
 import { vote } from "../../helpers/helpers";
 
+import "./pollComp.css";
+
 function PollComp({ poll, onVote }) {
   const [selectedOption, setSelectedOption] = useState();
   const handleChange = (e) => {
